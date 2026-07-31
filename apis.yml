@@ -1,8 +1,26 @@
 aid: oculus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oculus.png
 name: Oculus
-description: Oculus is a company surfaced as a portfolio company of 8vc, matrix-partners, spark-capital
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Oculus is the virtual-reality company founded in 2012 that Kickstarter-launched the Rift headset
+  and was backed by Spark Capital, Matrix Partners and others before Facebook acquired it in 2014 for
+  roughly two billion dollars. The Oculus consumer brand has since been folded into Meta Quest, and the
+  Oculus developer platform now lives as the Meta Horizon developer program at developers.meta.com/horizon.
+  It offers the Oculus/Meta Platform SDK, the Meta Spatial SDK, OpenXR-native, Unity and Unreal engine
+  integrations, and Immersive Web tooling for building mixed- and virtual-reality apps for Horizon OS and
+  the Horizon Store. The oculus.com domain now redirects to Meta Quest, and developer.oculus.com redirects
+  to the Meta Horizon developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/oculus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +30,21 @@ x-backed-by:
 - spark-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status-note: Acquired by Facebook/Meta in 2014; Oculus brand folded into Meta Quest / Meta Horizon.
+  No independent public REST/OpenAPI surface; developer platform is the Meta Horizon program.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Virtual Reality
+- Augmented Reality
+- Mixed Reality
+- Gaming
+- Developer Platform
+- SDK
+- XR
+- Meta
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +54,28 @@ maintainers:
 common:
 - type: Website
   url: https://oculus.com
+- type: DeveloperPortal
+  url: https://developers.meta.com/horizon/
+- type: Documentation
+  url: https://developers.meta.com/horizon/documentation/
+- type: GettingStarted
+  url: https://developers.meta.com/horizon/develop/
+- type: SDKs
+  url: https://developers.meta.com/horizon/downloads/
+- type: Blog
+  url: https://developers.meta.com/horizon/blog/
+- type: Support
+  url: https://developers.meta.com/horizon/support/
+- type: GitHubOrganization
+  url: https://github.com/oculus-samples
+- type: TermsOfService
+  url: https://www.meta.com/legal/quest/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.meta.com/legal/quest/privacy-policy/
+- type: DomainSecurity
+  url: security/oculus-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
